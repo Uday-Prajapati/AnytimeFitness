@@ -1,6 +1,9 @@
 # AnytimeFitness
 The modern world embraces health and wellness, with technology revolutionizing fitness. "Anytime Fitness" is a gym and fitness platform that helps users track, manage, and enhance their fitness journeys with comprehensive resources and support.
 
+# Deployed Link:
+https://anytimefitness-36efa.web.app
+
 # SignUp
 ![image](https://github.com/user-attachments/assets/c4dadc7b-1ced-4aeb-b737-8f0682ea16e7)
 
