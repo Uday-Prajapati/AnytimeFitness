@@ -1,0 +1,75 @@
+/* Remove dropdown arrow */
+.dropdown-toggle::after {
+  display: none; /* Hide the dropdown arrow */
+}
+
+/* Navbar and dropdown styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.0); /* Transparent with slight opacity */
+  border: none;
+  padding: 3px 7px; /* Reduced padding for smaller height */
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1rem; /* Slightly smaller text for links */
+  padding: 5px 10px; /* Reduce padding around links */
+  transition: color 0.3s ease;
+  font-weight: bold; /* Make text bold */
+}
+
+.nav-link:hover {
+  color: #f0ad4e !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 150px; /* Reduce logo size */
+  height: auto;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly opaque background for mobile dropdown */
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+
+/* Profile icon styles */
+.profile-icon {
+  width: 30px; /* Adjusted size */
+  height: 30px; /* Adjusted size */
+  border-radius: 50%; /* Keep it a circle */
+  margin-right: 5px; /* Space between the image and text */
+  vertical-align: middle; /* Align with text */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for dropdown */
+}
+
+.dropdown-item {
+  color: #fff; /* White text for dropdown items */
+  font-weight: bold; /* Make dropdown text bold */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(240, 173, 78, 0.8); /* Highlight color on hover */
+}

@@ -1,0 +1,120 @@
+.book-gym-container {
+  padding: 20px;
+  text-align: center;
+  position: relative; /* To position the Home button */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  color: white; /* Adjust text color for better contrast against background */
+}
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(241, 240, 240);
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+.search-box {
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gym-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 15px; /* Reduced gap */
+  margin-top: 20px;
+}
+
+.gym-card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: auto;
+}
+
+.gym-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.gym-image {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.gym-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.gym-card p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+.no-results {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Adjust grid for smaller screens */
+@media (max-width: 1024px) {
+  .gym-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .gym-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 columns or auto-fit smaller */
+  }
+
+  .home-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .book-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

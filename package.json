@@ -1,0 +1,49 @@
+{
+    "name": "gym-website",
+    "version": "1.0.0",
+    "description": "A comprehensive gym website",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts --max_old_space_size=16384 start",
+        "build": "react-scripts --max_old_space_size=16384 build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "firebase": "^11.2.0",
+        "framer-motion": "^11.5.4",
+        "gym-website": "file:",
+        "ldrs": "^1.0.2",
+        "react": "^18.0.0",
+        "react-bootstrap": "^2.10.4",
+        "react-dom": "^18.0.0",
+        "react-icons": "^5.3.0",
+        "react-router-dom": "^6.26.2",
+        "react-scripts": "^5.0.1",
+        "react-slick": "^0.30.2",
+        "scrollreveal": "^4.0.9",
+        "slick-carousel": "^1.8.1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    }
+}

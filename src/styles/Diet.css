@@ -1,0 +1,127 @@
+.diet-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  background-image: url('../assets/Dietbg.png'); /* Add your background image path here */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures full height of the viewport */
+  position: relative; /* Allows absolute positioning for inner elements if needed */
+}
+
+.diet-container h2, 
+.diet-container h3 {
+  color: white; /* Change text color to white */
+  text-align: center; /* Center align text */
+  margin-bottom: 1rem;
+}
+
+.diet-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between each diet option */
+  margin-bottom: 2rem;
+}
+
+.diet-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure all buttons are the same size and aligned */
+button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  width: 180px; /* All buttons are the same width */
+  height: 50px; /* All buttons are the same height */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Correct button colors */
+.btn-primary {
+  background-color: green; /* Veg Button */
+  color: white;
+}
+
+.btn-danger {
+  background-color: red; /* Non-Veg Button */
+  color: white;
+}
+
+.btn-success {
+  background-color: rgb(86, 85, 85); /* Supplements Button */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Input field styles */
+.weight-input {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+input[type='number'] {
+  display: block;
+  padding: 0.5rem;
+  width: 200px;
+  margin: 1rem auto 0;
+}
+
+/* Diet plan styles */
+.diet-plan {
+  margin-top: 2rem;
+}
+
+.diet-plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.diet-plan li {
+  background-color: #e9ecef;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.diet-plan li strong {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Image styling */
+.diet-image {
+  width: 150px; /* Image size */
+  height: 150px; /* Ensure equal height */
+  object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
+  margin-bottom: 1rem;
+}
+
+.diet-container .back-button.left-corner {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(241, 240, 240);
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.diet-container .back-button:hover {
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+

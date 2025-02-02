@@ -1,0 +1,108 @@
+/* General styles for the layout */
+.container {
+  margin-top: 20px;
+  max-width: 1200px;
+  position: relative; /* Allow positioning for the background */
+}
+
+/* Apply the background image specifically to the CommunityChallenge container */
+.community-challenge {
+  background-image: url('C:\\Users\\Uday Prajapati\\Desktop\\Udit\\gym-website\\public\\images\\background.png');
+ /* Correct path for your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition */
+  height: 100vh; /* Full viewport height */
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+/* Workout Category - list of workouts aligned vertically */
+.workout-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.workout-list li {
+  margin-bottom: 10px;
+}
+
+/* Align exercise list and challenges list to the left */
+.exercise-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px; /* Add space from the left */
+}
+
+.exercise-list li {
+  margin-bottom: 10px;
+}
+
+.challenge-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px; /* Add space from the left */
+}
+
+.challenge-list li {
+  margin-bottom: 10px;
+}
+
+/* Full-width buttons for the workout, exercise, and challenge categories */
+.btn-primary,
+.btn-success,
+.btn-warning {
+  width: 100%; /* Full width for buttons */
+  text-align: left;
+}
+
+/* Card styles for the challenge details */
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Styles for completed challenge text */
+.text-success {
+  font-weight: bold;
+  font-size: 16px;
+  color: green;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-success,
+  .btn-warning {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card-header {
+    font-size: 16px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+}
