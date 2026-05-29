@@ -32,7 +32,5 @@ https://anytimefitness-36efa.web.app
 
 # Firebase (Database)
 ![image](https://github.com/user-attachments/assets/16fa80d8-d4d7-40c6-813a-525f8997543d)
-![image](https://github.com/user-attachments/assets/6cfb199b-2684-46ef-a67a-b658b9658a03)
-
 
 
